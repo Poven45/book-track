@@ -32,4 +32,8 @@ public class Review {
         this.rating = rating;
         this.createdAt = LocalDateTime.now();
     }
+
+    public void setText(String text) {
+        this.text = text;
+    }
 }
