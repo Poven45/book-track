@@ -1,5 +1,6 @@
 package com.immortal_jellyfish.book_track.controller;
 
+import com.immortal_jellyfish.book_track.dto.CreateBookRequest;
 import com.immortal_jellyfish.book_track.model.Book;
 import com.immortal_jellyfish.book_track.service.BookService;
 import org.springframework.web.bind.annotation.*;
@@ -26,8 +27,8 @@ public class BookController {
     }
 
     @PostMapping
-    public Book addBook(@RequestParam String title, @RequestParam String author) {
-        return bookService.addBook(title, author);
+    public Book addBook(@RequestBody CreateBookRequest request) {
+        return bookService.addBook(request.getTitle(), request.getAuthor());
     }
 
     @DeleteMapping("/{id}")

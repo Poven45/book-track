@@ -1,14 +1,14 @@
 package com.immortal_jellyfish.book_track.dto;
 
 public class CreateReviewRequest {
-    private int rating;
+    private Integer rating;
     private String text;
 
-    public int getRating() {
+    public Integer getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(Integer rating) {
         this.rating = rating;
     }
 
