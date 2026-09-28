@@ -36,4 +36,10 @@ public class Review {
     public void setText(String text) {
         this.text = text;
     }
+
+    public Long getId() { return id; }
+    public Book getBook() { return book; }
+    public Integer getRating() { return rating; }
+    public String getText() { return text; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
 }

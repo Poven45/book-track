@@ -24,4 +24,13 @@ public class Book {
         this.title = title;
         this.author = author;
     }
+
+    public Long getId() { return id; }
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public String getOpenLibraryId() { return openLibraryId; }
+    public String getCoverUrl() { return coverUrl; }
+
+    public void setOpenLibraryId(String openLibraryId) { this.openLibraryId = openLibraryId; }
+    public void setCoverUrl(String coverUrl) { this.coverUrl = coverUrl; }
 }
